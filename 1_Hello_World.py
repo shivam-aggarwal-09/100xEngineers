@@ -4,7 +4,13 @@
 def square(lst):
     return [i**2 for i in lst]
 
-# creating a dynamic list
-print("Input 5 elements space separated: ")
-lst = map(int, input().split())
+# Input the number of elements that you want in a list
+lst_len = input("Enter the number of elements: ")
+
+# User will enter the space separated elements
+print("Input {} space separated integers".format(lst_len))
+lst = list(map(int, input().split()))
+
+# calling the function and prnting the output
 print(square(lst))
+
