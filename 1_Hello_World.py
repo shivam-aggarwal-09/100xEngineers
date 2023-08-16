@@ -4,6 +4,7 @@
 def square(lst):
     return [i**2 for i in lst]
 
-
-lst = [1,2,3,4,5]
+# creating a dynamic list
+print("Input 5 elements space separated: ")
+lst = map(int, input().split())
 print(square(lst))
